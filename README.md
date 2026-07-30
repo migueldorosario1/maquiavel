@@ -1,7 +1,9 @@
 # MAQUIAVEL
 
-**Revista de ciência política jornalística — PT/EN**
-*A journal of political ideas — political science with a journalist's voice*
+**Revista internacional de ciência política — EN/PT/ES**
+*An international journal of political science — essays, not hard news*
+
+🌐 **Site no ar / Live:** https://revistamaquiavel.vercel.app (EN) · [/pt](https://revistamaquiavel.vercel.app/pt/) · [/es](https://revistamaquiavel.vercel.app/es/)
 
 ---
 
