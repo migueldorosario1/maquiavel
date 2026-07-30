@@ -1,0 +1,129 @@
+{
+  "_meta": {
+    "descricao": "Fontes de curadoria da Revista Maquiavel — status legal por fonte. Regra de ouro: copia_integral só quando a licença permite explicitamente; caso contrário, resenha+link. Toda peça curada carrega fonte_curadoria + licenca_fonte no frontmatter.",
+    "atualizado": "2026-07-30",
+    "acao_valores": ["curadoria_integral", "resenha_link", "monitorar"]
+  },
+  "fontes": [
+    {
+      "nome": "SciELO Brasil — revistas de ciência política",
+      "url": "https://www.scielo.br/",
+      "rss": null,
+      "rss_nota": "feeds por periódico; descobrir via página de cada revista ou OAI-PMH (https://www.scielo.br/oai/)",
+      "idioma": "pt",
+      "licenca": "CC BY 4.0 (maioria dos periódicos; confirmar por revista)",
+      "copia_integral": true,
+      "traducao_livre": true,
+      "acao": "curadoria_integral",
+      "notas": "Joia da coroa legal: artigos acadêmicos completos CC BY — traduzir/adaptar com crédito. Sempre citar DOI."
+    },
+    {
+      "nome": "The Conversation (Global/UK/US/Africa)",
+      "url": "https://theconversation.com/",
+      "rss": "https://theconversation.com/articles.atom",
+      "idioma": "en",
+      "licenca": "CC BY-ND 4.0",
+      "copia_integral": true,
+      "traducao_livre": false,
+      "acao": "curadoria_integral",
+      "notas": "Republicação permitida COM crédito e sem alterações (ND). Tradução conta como derivação: NÃO traduzir sem contato editorial. Usar em EN como está; para PT/ES, resenha+link."
+    },
+    {
+      "nome": "The Conversation Brasil",
+      "url": "https://theconversation.com/br",
+      "rss": "https://theconversation.com/br/articles.atom",
+      "idioma": "pt",
+      "licenca": "CC BY-ND 4.0",
+      "copia_integral": true,
+      "traducao_livre": false,
+      "acao": "curadoria_integral",
+      "notas": "Acadêmicos brasileiros escrevendo para o público — perfeito para a Maquiavel. PT como está; EN/ES = resenha+link (ND)."
+    },
+    {
+      "nome": "openDemocracy",
+      "url": "https://www.opendemocracy.net/",
+      "rss": null,
+      "rss_nota": "descobrir feed atual (historico: /en/rss/)",
+      "idioma": "en",
+      "licenca": "CC BY-NC 4.0 (maioria; verificar por artigo)",
+      "copia_integral": true,
+      "traducao_livre": true,
+      "acao": "curadoria_integral",
+      "notas": "CC BY-NC permite traduzir com crédito (uso não comercial — a Maquiavel é editorial, sem ads: ok; reavaliar se houver paywall/ads no futuro)."
+    },
+    {
+      "nome": "ECPR — The Loop",
+      "url": "https://theloop.ecpr.eu/",
+      "rss": "https://theloop.ecpr.eu/feed/",
+      "idioma": "en",
+      "licenca": "© ECPR (verificar política de republicação)",
+      "copia_integral": false,
+      "traducao_livre": false,
+      "acao": "resenha_link",
+      "notas": "Blog oficial da European Consortium for Political Research — ótima pauta. Resenhar e linkar; pedir permissão para traduções completas."
+    },
+    {
+      "nome": "LSE Blogs (EUROPP, Latin America & Caribbean, USAPP)",
+      "url": "https://blogs.lse.ac.uk/",
+      "rss": "https://blogs.lse.ac.uk/europpblog/feed/",
+      "idioma": "en",
+      "licenca": "CC BY-NC-ND (maioria dos blogs LSE)",
+      "copia_integral": false,
+      "traducao_livre": false,
+      "acao": "resenha_link",
+      "notas": "ND bloqueia tradução integral. Resenha crítica + link — formato 'Lido na Maquiavel'."
+    },
+    {
+      "nome": "Nueva Sociedad",
+      "url": "https://nuso.org/",
+      "rss": null,
+      "idioma": "es",
+      "licenca": "© Fundación Nueva Sociedad (conteúdo aberto online; republicação sob permissão)",
+      "copia_integral": false,
+      "traducao_livre": false,
+      "acao": "resenha_link",
+      "notas": "Tradição ensaística latino-americana. Resenha+link; parceria editorial futura = contato formal."
+    },
+    {
+      "nome": "CLACSO — Boletim e biblioteca",
+      "url": "https://www.clacso.org/",
+      "rss": null,
+      "idioma": "es/pt",
+      "licenca": "mista (muito conteúdo CC; verificar por item)",
+      "copia_integral": false,
+      "traducao_livre": false,
+      "acao": "monitorar",
+      "notas": "Biblioteca CLACSO tem teses e livros abertos — usar como fonte do Acervo e de pauta de resenhas."
+    },
+    {
+      "nome": "Revista de Ciencia Política (PUC Chile / SciELO Chile)",
+      "url": "https://scielo.conicyt.cl/scielo.php?script=sci_serial&pid=0718-090X",
+      "rss": null,
+      "idioma": "es/en",
+      "licenca": "CC BY (via SciELO; confirmar)",
+      "copia_integral": true,
+      "traducao_livre": true,
+      "acao": "curadoria_integral",
+      "notas": "Fluxo ES→PT/EN de artigos acadêmicos adaptados — sempre com DOI e crédito."
+    },
+    {
+      "nome": "Foreign Affairs / Le Monde Diplomatique / paywalls em geral",
+      "url": "https://www.foreignaffairs.com/",
+      "rss": null,
+      "idioma": "en/fr",
+      "licenca": "© proprietário",
+      "copia_integral": false,
+      "traducao_livre": false,
+      "acao": "resenha_link",
+      "notas": "Jamais copiar. Formato: resenha crítica original da Maquiavel citando trechos curtos (fair use crítico) + link."
+    }
+  ],
+  "regras_operacionais": [
+    "1. Antes de publicar curadoria integral, conferir a licença NA PÁGINA do artigo (fontes mudam políticas).",
+    "2. Toda peça curada: frontmatter fonte_curadoria (URL) + licenca_fonte + autor original + link canônico de volta.",
+    "3. Tradução só quando a licença permite derivações (CC BY, CC BY-SA, CC BY-NC). ND = nunca traduzir.",
+    "4. Fact-check com websearch real antes de publicar (regra consolidada do ecossistema).",
+    "5. Dedup por URL canônica + título (registry em agent_data/curadoria_ja_usada.json).",
+    "6. Seção 'Curation' do site identifica publicamente a peça como curadoria traduzida."
+  ]
+}
