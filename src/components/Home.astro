@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { UI, articleUrl, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = UI[lang];
+
+const posts = (await getCollection('artigos', ({ data }) => data.lang === lang && !data.draft))
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const [featured, ...rest] = posts;
+
+function slugOf(id: string): string {
+  return id.replace(/^(en|pt|es)\//, '');
+}
+function dateOf(d: Date): string {
+  return d.toLocaleDateString(lang === 'en' ? 'en-US' : lang === 'pt' ? 'pt-BR' : 'es-ES', {
+    year: 'numeric', month: 'long', day: 'numeric',
+  });
+}
+---
+
+<Base title={t.tagline} description={t.tagline} lang={lang}>
+  {featured && (
+    <section class="hero">
+      <div class="container">
+        <div class="kicker">{t.home_featured}</div>
+        <h1><a href={articleUrl(lang, slugOf(featured.id))}>{featured.data.title}</a></h1>
+        <p class="desc">{featured.data.description}</p>
+        <div class="meta">
+          <span class="secao-chip">{featured.data.secao}</span>
+          {featured.data.autor} · {dateOf(featured.data.pubDate)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section id="latest">
+    <div class="container">
+      <div class="section-head">{t.home_latest}</div>
+      <ul class="article-list">
+        {rest.map((p) => (
+          <li>
+            <h2><a href={articleUrl(lang, slugOf(p.id))}>{p.data.title}</a></h2>
+            <p class="desc">{p.data.description}</p>
+            <div class="meta">
+              <span class="secao-chip">{p.data.secao}</span>
+              {p.data.autor} · {dateOf(p.data.pubDate)}
+            </div>
+          </li>
+        ))}
+        {rest.length === 0 && !featured && (
+          <li><p class="desc">—</p></li>
+        )}
+      </ul>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro';
+import { UI, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = UI[lang];
+
+const C = {
+  en: {
+    h1: 'Maquiavel — the podcast',
+    intro: 'Debates with political scientists, from Rio de Janeiro to the world. Every episode becomes an essay in the journal.',
+    format_h: 'The format',
+    format:
+      'Long conversations with political scientists — from IESP-UERJ, UFRJ, UFF and universities across Brazil and abroad — on power, institutions, elections, political theory and the politics of artificial intelligence. Focused on Rio de Janeiro and Brazil, in dialogue with the world.',
+    soon_h: 'First season',
+    soon:
+      'In preparation. Episodes will appear here with audio, full transcript in three languages and the derived essay. If you are a political scientist and would like to join a debate, write to us through the Submissions page.',
+  },
+  pt: {
+    h1: 'Maquiavel — o podcast',
+    intro: 'Debates com cientistas políticos, do Rio de Janeiro para o mundo. Cada episódio vira um ensaio na revista.',
+    format_h: 'O formato',
+    format:
+      'Conversas longas com cientistas políticos — do IESP-UERJ, da UFRJ, da UFF e de universidades do Brasil e do exterior — sobre poder, instituições, eleições, teoria política e a política da inteligência artificial. Foco no Rio de Janeiro e no Brasil, em diálogo com o mundo.',
+    soon_h: 'Primeira temporada',
+    soon:
+      'Em preparação. Os episódios aparecerão aqui com áudio, transcrição integral em três línguas e o ensaio derivado. Se você é cientista político e quer debater conosco, escreva pela página Colabore.',
+  },
+  es: {
+    h1: 'Maquiavel — el podcast',
+    intro: 'Debates con cientistas políticos, de Río de Janeiro para el mundo. Cada episodio se convierte en un ensayo de la revista.',
+    format_h: 'El formato',
+    format:
+      'Conversaciones largas con cientistas políticos — del IESP-UERJ, UFRJ, UFF y universidades de Brasil y del exterior — sobre poder, instituciones, elecciones, teoría política y la política de la inteligencia artificial. Foco en Río de Janeiro y Brasil, en diálogo con el mundo.',
+    soon_h: 'Primera temporada',
+    soon:
+      'En preparación. Los episodios aparecerán aquí con audio, transcripción completa en tres idiomas y el ensayo derivado. Si eres cientista político y quieres debatir con nosotros, escríbenos por la página Colabora.',
+  },
+};
+const c = C[lang];
+---
+
+<Base title={c.h1} description={c.intro} lang={lang}>
+  <header class="page-head">
+    <div class="container">
+      <h1>{c.h1}</h1>
+      <p class="intro">{c.intro}</p>
+    </div>
+  </header>
+  <div class="narrow page-body">
+    <h2>{c.format_h}</h2>
+    <p>{c.format}</p>
+    <h2>{c.soon_h}</h2>
+    <p>{c.soon}</p>
+  </div>
+</Base>

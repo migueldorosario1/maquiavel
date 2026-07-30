@@ -1,0 +1,158 @@
+[
+  {
+    "nome": "Revista Brasileira de Ciência Política (RBCP)",
+    "instituicao": "Instituto de Ciência Política, UnB",
+    "pais": "Brasil",
+    "url": "https://www.scielo.br/j/rbcp/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Brazil's flagship political science journal.",
+      "pt": "A principal revista de ciência política do país.",
+      "es": "La principal revista de ciencia política de Brasil."
+    }
+  },
+  {
+    "nome": "Opinião Pública",
+    "instituicao": "CESOP, Unicamp",
+    "pais": "Brasil",
+    "url": "https://www.scielo.br/j/op/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Public opinion, elections and political behavior.",
+      "pt": "Opinião pública, eleições e comportamento político.",
+      "es": "Opinión pública, elecciones y comportamiento político."
+    }
+  },
+  {
+    "nome": "DADOS — Revista de Ciências Sociais",
+    "instituicao": "IUPERJ / UCAM",
+    "pais": "Brasil",
+    "url": "https://www.scielo.br/j/dados/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "One of Latin America's oldest and most prestigious social science journals.",
+      "pt": "Uma das mais antigas e prestigiadas revistas de ciências sociais da América Latina.",
+      "es": "Una de las más antiguas y prestigiosas revistas de ciencias sociales de América Latina."
+    }
+  },
+  {
+    "nome": "Lua Nova",
+    "instituicao": "CEBRAP",
+    "pais": "Brasil",
+    "url": "https://www.scielo.br/j/ln/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Political theory and Brazilian politics from CEBRAP.",
+      "pt": "Teoria política e política brasileira, do CEBRAP.",
+      "es": "Teoría política y política brasileña, del CEBRAP."
+    }
+  },
+  {
+    "nome": "Novos Estudos CEBRAP",
+    "instituicao": "CEBRAP",
+    "pais": "Brasil",
+    "url": "https://www.scielo.br/j/nec/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Multidisciplinary, with strong political science and sociology.",
+      "pt": "Multidisciplinar, com forte presença de ciência política e sociologia.",
+      "es": "Multidisciplinaria, con fuerte presencia de ciencia política y sociología."
+    }
+  },
+  {
+    "nome": "Revista de Sociologia e Política",
+    "instituicao": "UFPR",
+    "pais": "Brasil",
+    "url": "https://www.scielo.br/j/rsocp/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Sociology and politics from Paraná's federal university.",
+      "pt": "Sociologia e política, da Universidade Federal do Paraná.",
+      "es": "Sociología y política, de la Universidad Federal de Paraná."
+    }
+  },
+  {
+    "nome": "Brazilian Political Science Review (BPSR)",
+    "instituicao": "SBCP / FGV",
+    "pais": "Brasil",
+    "url": "https://www.bpsr.org.br/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Brazilian political science publishing in English, for the world.",
+      "pt": "A ciência política brasileira em inglês, para o mundo.",
+      "es": "La ciencia política brasileña en inglés, para el mundo."
+    }
+  },
+  {
+    "nome": "Contexto Internacional",
+    "instituicao": "PUC-Rio",
+    "pais": "Brasil",
+    "url": "https://www.scielo.br/j/cint/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "International relations from PUC-Rio's IRI.",
+      "pt": "Relações internacionais, do IRI da PUC-Rio.",
+      "es": "Relaciones internacionales, del IRI de la PUC-Río."
+    }
+  },
+  {
+    "nome": "Revista Brasileira de História",
+    "instituicao": "ANPUH",
+    "pais": "Brasil",
+    "url": "https://www.scielo.br/j/rbh/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "The national historians' association journal — political history included.",
+      "pt": "A revista da associação nacional de história — incluindo história política.",
+      "es": "La revista de la asociación nacional de historia — incluida la historia política."
+    }
+  },
+  {
+    "nome": "Estudos Históricos",
+    "instituicao": "CPDOC, FGV",
+    "pais": "Brasil",
+    "url": "https://www.scielo.br/j/reh/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Political and social history from FGV's CPDOC.",
+      "pt": "História política e social, do CPDOC da FGV.",
+      "es": "Historia política y social, del CPDOC de la FGV."
+    }
+  },
+  {
+    "nome": "Compolítica",
+    "instituicao": "Associação Brasileira de Comunicação Política",
+    "pais": "Brasil",
+    "url": "https://compolitica.org.br/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Political communication: media, campaigns, digital politics.",
+      "pt": "Comunicação política: mídia, campanhas, política digital.",
+      "es": "Comunicación política: medios, campañas, política digital."
+    }
+  },
+  {
+    "nome": "Revista FAMECOS",
+    "instituicao": "PUC-RS",
+    "pais": "Brasil",
+    "url": "https://revistas.pucrs.br/index.php/famecos",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Communication studies with a political strand.",
+      "pt": "Estudos de comunicação com vertente política.",
+      "es": "Estudios de comunicación con vertiente política."
+    }
+  },
+  {
+    "nome": "E-Compós",
+    "instituicao": "UnB",
+    "pais": "Brasil",
+    "url": "https://www.e-compos.org.br/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Communication journal of the University of Brasília.",
+      "pt": "Revista de comunicação da Universidade de Brasília.",
+      "es": "Revista de comunicación de la Universidad de Brasilia."
+    }
+  }
+]

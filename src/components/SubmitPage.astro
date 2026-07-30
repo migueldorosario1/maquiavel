@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+import { UI, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = UI[lang];
+
+const C = {
+  en: {
+    h1: 'Submissions',
+    intro: 'Maquiavel publishes essays grounded in political science, in English, Portuguese or Spanish.',
+    what_h: 'What we are looking for',
+    what: [
+      'Essays (1,500–4,000 words) of political analysis with scientific grounding — data, literature, sources — written in living magazine prose.',
+      'Reviews of books and academic papers that matter to public debate.',
+      'Proposals for interviews and dossiers.',
+    ],
+    rules_h: 'Ground rules',
+    rules: [
+      'Original work, unpublished elsewhere (translations of your own published academic work are welcome).',
+      'Every factual claim must be checkable; include references and links.',
+      'Declare any AI assistance in the writing process.',
+      'The editorial board replies to every submission; accepted essays may be translated by Maquiavel into the other two languages, always crediting the author.',
+    ],
+    how_h: 'How to submit',
+    how: 'Our editorial channel opens with the first issue. Meanwhile, reach us via the contact announced on our social profiles.',
+  },
+  pt: {
+    h1: 'Colabore com a Maquiavel',
+    intro: 'A Maquiavel publica ensaios com lastro em ciência política, em português, inglês ou espanhol.',
+    what_h: 'O que procuramos',
+    what: [
+      'Ensaios (1.500–4.000 palavras) de análise política com base científica — dado, literatura, fontes — escritos em prosa viva de revista.',
+      'Resenhas de livros e papers acadêmicos que importam para o debate público.',
+      'Propostas de entrevistas e dossiês.',
+    ],
+    rules_h: 'Regras do jogo',
+    rules: [
+      'Trabalho original e inédito (traduções do seu próprio trabalho acadêmico publicado são bem-vindas).',
+      'Toda afirmação factual precisa ser verificável; inclua referências e links.',
+      'Declare qualquer auxílio de IA na escrita.',
+      'A redação responde a todas as submissões; ensaios aceitos podem ser traduzidos pela Maquiavel para as outras duas línguas, sempre com crédito ao autor.',
+    ],
+    how_h: 'Como enviar',
+    how: 'Nosso canal editorial abre com a primeira edição. Enquanto isso, fale conosco pelo contato anunciado em nossos perfis sociais.',
+  },
+  es: {
+    h1: 'Colabora con Maquiavel',
+    intro: 'Maquiavel publica ensayos con base en la ciencia política, en español, inglés o portugués.',
+    what_h: 'Qué buscamos',
+    what: [
+      'Ensayos (1.500–4.000 palabras) de análisis político con base científica — datos, literatura, fuentes — escritos en prosa viva de revista.',
+      'Reseñas de libros y papers académicos que importan al debate público.',
+      'Propuestas de entrevistas y dosieres.',
+    ],
+    rules_h: 'Reglas del juego',
+    rules: [
+      'Trabajo original e inédito (las traducciones de tu propio trabajo académico publicado son bienvenidas).',
+      'Toda afirmación factual debe ser verificable; incluye referencias y enlaces.',
+      'Declara cualquier asistencia de IA en la escritura.',
+      'La redacción responde a todas las colaboraciones; los ensayos aceptados pueden ser traducidos por Maquiavel a los otros dos idiomas, siempre con crédito al autor.',
+    ],
+    how_h: 'Cómo enviar',
+    how: 'Nuestro canal editorial abre con el primer número. Mientras tanto, contáctanos por el canal anunciado en nuestros perfiles sociales.',
+  },
+};
+const c = C[lang];
+---
+
+<Base title={c.h1} description={c.intro} lang={lang}>
+  <header class="page-head">
+    <div class="container">
+      <h1>{c.h1}</h1>
+      <p class="intro">{c.intro}</p>
+    </div>
+  </header>
+  <div class="narrow page-body">
+    <h2>{c.what_h}</h2>
+    <ul>{c.what.map((x) => <li>{x}</li>)}</ul>
+    <h2>{c.rules_h}</h2>
+    <ul>{c.rules.map((x) => <li>{x}</li>)}</ul>
+    <h2>{c.how_h}</h2>
+    <p>{c.how}</p>
+  </div>
+</Base>

@@ -1,0 +1,185 @@
+[
+  {
+    "nome": "IESP-UERJ — Instituto de Estudos Sociais e Políticos",
+    "instituicao": "Universidade do Estado do Rio de Janeiro",
+    "pais": "Brasil",
+    "url": "https://www.iesp.uerj.br/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "One of Brazil's top political science institutes — and home turf for Maquiavel's podcast.",
+      "pt": "Um dos maiores institutos de ciência política do Brasil — e casa do podcast da Maquiavel.",
+      "es": "Uno de los mayores institutos de ciencia política de Brasil — y casa del podcast de Maquiavel."
+    }
+  },
+  {
+    "nome": "UFRJ — IFCS / Departamento de Ciência Política",
+    "instituicao": "Universidade Federal do Rio de Janeiro",
+    "pais": "Brasil",
+    "url": "https://ifcs.ufrj.br/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "USP — Departamento de Ciência Política",
+    "instituicao": "FFLCH, Universidade de São Paulo",
+    "pais": "Brasil",
+    "url": "https://dcp.fflch.usp.br/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "UnB — Instituto de Ciência Política (IPOL)",
+    "instituicao": "Universidade de Brasília",
+    "pais": "Brasil",
+    "url": "https://ipol.unb.br/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "UFF — Departamento de Ciência Política",
+    "instituicao": "Universidade Federal Fluminense",
+    "pais": "Brasil",
+    "url": "https://www.uff.br/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "CEBRAP — Centro Brasileiro de Análise e Planejamento",
+    "instituicao": "CEBRAP",
+    "pais": "Brasil",
+    "url": "https://cebrap.org.br/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "The legendary independent research center of São Paulo.",
+      "pt": "O lendário centro independente de pesquisa de São Paulo.",
+      "es": "El legendario centro independiente de investigación de São Paulo."
+    }
+  },
+  {
+    "nome": "CPDOC — FGV",
+    "instituicao": "Fundação Getulio Vargas",
+    "pais": "Brasil",
+    "url": "https://cpdoc.fgv.br/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Political history and contemporary Brazilian politics.",
+      "pt": "História política e política brasileira contemporânea.",
+      "es": "Historia política y política brasileña contemporánea."
+    }
+  },
+  {
+    "nome": "UFMG — FAFICH / Ciência Política",
+    "instituicao": "Universidade Federal de Minas Gerais",
+    "pais": "Brasil",
+    "url": "https://fafich.ufmg.br/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Unicamp — IFCH",
+    "instituicao": "Universidade Estadual de Campinas",
+    "pais": "Brasil",
+    "url": "https://www.ifch.unicamp.br/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Harvard — Department of Government",
+    "instituicao": "Harvard University",
+    "pais": "EUA",
+    "url": "https://gov.harvard.edu/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Oxford — DPIR",
+    "instituicao": "University of Oxford",
+    "pais": "Reino Unido",
+    "url": "https://www.politics.ox.ac.uk/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "LSE — Department of Government",
+    "instituicao": "London School of Economics",
+    "pais": "Reino Unido",
+    "url": "https://www.lse.ac.uk/government",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Sciences Po — CEVIPOF",
+    "instituicao": "Sciences Po Paris",
+    "pais": "França",
+    "url": "https://www.sciencespo.fr/cevipof/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Princeton — Department of Politics",
+    "instituicao": "Princeton University",
+    "pais": "EUA",
+    "url": "https://politics.princeton.edu/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Yale — Department of Political Science",
+    "instituicao": "Yale University",
+    "pais": "EUA",
+    "url": "https://politicalscience.yale.edu/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Stanford — Department of Political Science",
+    "instituicao": "Stanford University",
+    "pais": "EUA",
+    "url": "https://politicalscience.stanford.edu/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "University of Chicago — Department of Political Science",
+    "instituicao": "University of Chicago",
+    "pais": "EUA",
+    "url": "https://political-science.uchicago.edu/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "UBA — Facultad de Ciencias Sociales",
+    "instituicao": "Universidad de Buenos Aires",
+    "pais": "Argentina",
+    "url": "https://www.sociales.uba.ar/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "UNAM — Facultad de Ciencias Políticas y Sociales",
+    "instituicao": "Universidad Nacional Autónoma de México",
+    "pais": "México",
+    "url": "https://politicas.unam.mx/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "El Colegio de México",
+    "instituicao": "COLMEX",
+    "pais": "México",
+    "url": "https://www.colmex.mx/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "PUC Chile — Instituto de Ciencia Política",
+    "instituicao": "Pontificia Universidad Católica de Chile",
+    "pais": "Chile",
+    "url": "https://cienciapolitica.uc.cl/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Universidad de los Andes — Ciencia Política",
+    "instituicao": "Uniandes",
+    "pais": "Colômbia",
+    "url": "https://cienciapolitica.uniandes.edu.co/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "ICS — Instituto de Ciências Sociais",
+    "instituicao": "Universidade de Lisboa",
+    "pais": "Portugal",
+    "url": "https://www.ics.ulisboa.pt/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "IPRI — Instituto Português de Relações Internacionais",
+    "instituicao": "Universidade Nova de Lisboa",
+    "pais": "Portugal",
+    "url": "https://www.ipri.unl.pt/",
+    "acesso": "aberto"
+  }
+]

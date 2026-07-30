@@ -1,0 +1,85 @@
+---
+import '../styles/global.css';
+import { UI, LANGS, LANG_NAMES, langPrefix, type Lang } from '../i18n/ui';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang: Lang;
+  // caminhos das versões paralelas (para hreflang e o seletor de língua)
+  alternates?: Partial<Record<Lang, string>>;
+}
+
+const { title, description = '', lang, alternates = {} } = Astro.props;
+const t = UI[lang];
+const site = Astro.site ?? new URL('https://maquiavel.vercel.app');
+const canonical = new URL(Astro.url.pathname, site).toString();
+
+function alt(path: string | undefined, l: Lang): string {
+  return new URL(path ?? `${langPrefix(l)}/`, site).toString();
+}
+
+const navItems = [
+  { key: 'nav_essays', path: { en: '/#latest', pt: '/pt/#latest', es: '/es/#latest' } },
+  { key: 'nav_archive', path: { en: '/archive', pt: '/pt/acervo', es: '/es/archivo' } },
+  { key: 'nav_podcast', path: { en: '/podcast', pt: '/pt/podcast', es: '/es/podcast' } },
+  { key: 'nav_about', path: { en: '/about', pt: '/pt/sobre', es: '/es/sobre' } },
+  { key: 'nav_submit', path: { en: '/submissions', pt: '/pt/colaborar', es: '/es/colaborar' } },
+] as const;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} — Maquiavel</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {LANGS.map((l) => (
+      <link rel="alternate" hreflang={l} href={alt(alternates[l], l)} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={alt(alternates.en, 'en')} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="container">
+        <div class="brand"><a href={`${langPrefix(lang)}/`}>Maquiavel</a></div>
+        <div class="tagline">{t.tagline}</div>
+        <nav class="lang-switch" aria-label="Language">
+          {LANGS.map((l) => (
+            <a href={alternates[l] ?? `${langPrefix(l)}/`} class={l === lang ? 'active' : ''}>{LANG_NAMES[l]}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <nav class="mainnav">
+      <div class="container">
+        <ul>
+          {navItems.map((item) => (
+            <li><a href={item.path[lang]}>{t[item.key]}</a></li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="fbrand">Maquiavel</div>
+        <div>{t.footer_note}</div>
+        <div style="margin-top:10px">© {new Date().getFullYear()} Maquiavel · EN / PT / ES</div>
+      </div>
+    </footer>
+  </body>
+</html>

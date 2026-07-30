@@ -1,0 +1,187 @@
+[
+  {
+    "nome": "American Political Science Review (APSR)",
+    "instituicao": "APSA / Cambridge University Press",
+    "pais": "EUA",
+    "url": "https://www.cambridge.org/core/journals/american-political-science-review",
+    "acesso": "misto",
+    "nota": {
+      "en": "The discipline's flagship journal since 1906.",
+      "pt": "A revista-mor da disciplina desde 1906.",
+      "es": "La revista principal de la disciplina desde 1906."
+    }
+  },
+  {
+    "nome": "American Journal of Political Science (AJPS)",
+    "instituicao": "MPSA / Wiley",
+    "pais": "EUA",
+    "url": "https://onlinelibrary.wiley.com/journal/15405907",
+    "acesso": "misto"
+  },
+  {
+    "nome": "The Journal of Politics (JOP)",
+    "instituicao": "SPSA / University of Chicago Press",
+    "pais": "EUA",
+    "url": "https://www.journals.uchicago.edu/toc/jop/current",
+    "acesso": "misto"
+  },
+  {
+    "nome": "World Politics",
+    "instituicao": "Princeton / Cambridge University Press",
+    "pais": "EUA",
+    "url": "https://www.cambridge.org/core/journals/world-politics",
+    "acesso": "misto",
+    "nota": {
+      "en": "Comparative politics and international relations at the highest level.",
+      "pt": "Política comparada e relações internacionais no mais alto nível.",
+      "es": "Política comparada y relaciones internacionales al más alto nivel."
+    }
+  },
+  {
+    "nome": "Comparative Political Studies",
+    "instituicao": "SAGE",
+    "pais": "EUA",
+    "url": "https://journals.sagepub.com/home/cps",
+    "acesso": "misto"
+  },
+  {
+    "nome": "British Journal of Political Science",
+    "instituicao": "Cambridge University Press",
+    "pais": "Reino Unido",
+    "url": "https://www.cambridge.org/core/journals/british-journal-of-political-science",
+    "acesso": "misto"
+  },
+  {
+    "nome": "European Journal of Political Research",
+    "instituicao": "ECPR / Wiley",
+    "pais": "Europa",
+    "url": "https://onlinelibrary.wiley.com/journal/14756765",
+    "acesso": "misto"
+  },
+  {
+    "nome": "Journal of Democracy",
+    "instituicao": "NED / Johns Hopkins University Press",
+    "pais": "EUA",
+    "url": "https://www.journalofdemocracy.org/",
+    "acesso": "misto",
+    "nota": {
+      "en": "The essential forum on democratic advances and breakdowns.",
+      "pt": "O fórum essencial sobre avanços e rupturas democráticas.",
+      "es": "El foro esencial sobre avances y rupturas democráticas."
+    }
+  },
+  {
+    "nome": "Political Science Quarterly",
+    "instituicao": "Academy of Political Science / Wiley",
+    "pais": "EUA",
+    "url": "https://www.psqonline.org/",
+    "acesso": "misto"
+  },
+  {
+    "nome": "Journal of Political Philosophy",
+    "instituicao": "Wiley",
+    "pais": "Reino Unido",
+    "url": "https://onlinelibrary.wiley.com/journal/14679760",
+    "acesso": "misto"
+  },
+  {
+    "nome": "Revista de Ciencia Política",
+    "instituicao": "Pontificia Universidad Católica de Chile",
+    "pais": "Chile",
+    "url": "https://scielo.conicyt.cl/scielo.php?script=sci_serial&pid=0718-090X",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Latin America's leading Spanish-language political science journal.",
+      "pt": "A principal revista de ciência política em espanhol da América Latina.",
+      "es": "La principal revista latinoamericana de ciencia política en español."
+    }
+  },
+  {
+    "nome": "Política y Gobierno",
+    "instituicao": "CIDE",
+    "pais": "México",
+    "url": "https://www.scielo.org.mx/scielo.php?script=sci_serial&pid=1665-2037",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Foro Internacional",
+    "instituicao": "El Colegio de México",
+    "pais": "México",
+    "url": "https://forointernacional.colmex.mx/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Desarrollo Económico",
+    "instituicao": "IDES",
+    "pais": "Argentina",
+    "url": "https://www.scielo.org.ar/scielo.php?script=sci_serial&pid=0046-001X",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Nueva Sociedad",
+    "instituicao": "Fundación Nueva Sociedad",
+    "pais": "Argentina",
+    "url": "https://nuso.org/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "The classic essay journal of Latin American politics and democracy.",
+      "pt": "A clássica revista de ensaios sobre política e democracia latino-americanas.",
+      "es": "La clásica revista de ensayos sobre política y democracia latinoamericanas."
+    }
+  },
+  {
+    "nome": "Foreign Affairs",
+    "instituicao": "Council on Foreign Relations",
+    "pais": "EUA",
+    "url": "https://www.foreignaffairs.com/",
+    "acesso": "paywall",
+    "nota": {
+      "en": "The century-old magazine of international politics and ideas.",
+      "pt": "A centenária revista de política internacional e ideias.",
+      "es": "La centenaria revista de política internacional e ideas."
+    }
+  },
+  {
+    "nome": "Le Monde Diplomatique",
+    "instituicao": "Le Monde",
+    "pais": "França",
+    "url": "https://www.monde-diplomatique.fr/",
+    "acesso": "paywall",
+    "nota": {
+      "en": "The monthly essay institution of the international left.",
+      "pt": "A instituição mensal do ensaio político internacional.",
+      "es": "La institución mensual del ensayo político internacional."
+    }
+  },
+  {
+    "nome": "New Left Review",
+    "instituicao": "New Left Review",
+    "pais": "Reino Unido",
+    "url": "https://newleftreview.org/",
+    "acesso": "misto"
+  },
+  {
+    "nome": "Constellations",
+    "instituicao": "Wiley",
+    "pais": "EUA",
+    "url": "https://onlinelibrary.wiley.com/journal/14678675",
+    "acesso": "misto",
+    "nota": {
+      "en": "Critical and democratic theory.",
+      "pt": "Teoria crítica e democrática.",
+      "es": "Teoría crítica y democrática."
+    }
+  },
+  {
+    "nome": "The New York Review of Books",
+    "instituicao": "NYREV",
+    "pais": "EUA",
+    "url": "https://www.nybooks.com/",
+    "acesso": "paywall",
+    "nota": {
+      "en": "The gold standard of the long political essay.",
+      "pt": "O padrão-ouro do ensaio político longo.",
+      "es": "El estándar de oro del ensayo político largo."
+    }
+  }
+]

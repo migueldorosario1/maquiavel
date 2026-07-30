@@ -1,0 +1,149 @@
+[
+  {
+    "nome": "SciELO Brasil",
+    "instituicao": "FAPESP / CNPq",
+    "pais": "Brasil",
+    "url": "https://www.scielo.br/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Open-access library of Brazilian scientific journals — most under CC licenses.",
+      "pt": "Biblioteca aberta dos periódicos científicos brasileiros — maioria em licenças CC.",
+      "es": "Biblioteca abierta de revistas científicas brasileñas — mayoría bajo licencias CC."
+    }
+  },
+  {
+    "nome": "Catálogo de Teses e Dissertações da CAPES",
+    "instituicao": "CAPES",
+    "pais": "Brasil",
+    "url": "https://catalogodeteses.capes.gov.br/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Every Brazilian thesis and dissertation, catalogued.",
+      "pt": "Todas as teses e dissertações brasileiras, catalogadas.",
+      "es": "Todas las tesis y disertaciones brasileñas, catalogadas."
+    }
+  },
+  {
+    "nome": "BDTD — Biblioteca Digital Brasileira de Teses e Dissertações",
+    "instituicao": "IBICT",
+    "pais": "Brasil",
+    "url": "https://bdtd.ibict.br/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Teses USP",
+    "instituicao": "Universidade de São Paulo",
+    "pais": "Brasil",
+    "url": "https://www.teses.usp.br/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Repositório Institucional da UnB",
+    "instituicao": "Universidade de Brasília",
+    "pais": "Brasil",
+    "url": "https://repositorio.unb.br/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "CLACSO — Biblioteca Virtual",
+    "instituicao": "CLACSO",
+    "pais": "América Latina",
+    "url": "https://biblioteca.clacso.edu.ar/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "The great open library of Latin American social sciences.",
+      "pt": "A grande biblioteca aberta das ciências sociais latino-americanas.",
+      "es": "La gran biblioteca abierta de las ciencias sociales latinoamericanas."
+    }
+  },
+  {
+    "nome": "Redalyc",
+    "instituicao": "UAEM",
+    "pais": "México / América Latina",
+    "url": "https://www.redalyc.org/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Dialnet",
+    "instituicao": "Universidad de La Rioja",
+    "pais": "Espanha",
+    "url": "https://dialnet.unirioja.es/",
+    "acesso": "misto",
+    "nota": {
+      "en": "The largest portal of scientific journals in Spanish and Portuguese.",
+      "pt": "O maior portal de periódicos científicos em espanhol e português.",
+      "es": "El mayor portal de revistas científicas en español y portugués."
+    }
+  },
+  {
+    "nome": "Repositorio CEPAL",
+    "instituicao": "CEPAL / ONU",
+    "pais": "Chile / América Latina",
+    "url": "https://repositorio.cepal.org/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "DOAJ — Directory of Open Access Journals",
+    "instituicao": "DOAJ",
+    "pais": "Internacional",
+    "url": "https://doaj.org/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "OpenAlex",
+    "instituicao": "OurResearch",
+    "pais": "Internacional",
+    "url": "https://openalex.org/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Open catalog of 250M+ scientific works, with API.",
+      "pt": "Catálogo aberto de mais de 250 milhões de trabalhos científicos, com API.",
+      "es": "Catálogo abierto de más de 250 millones de trabajos científicos, con API."
+    }
+  },
+  {
+    "nome": "CORE",
+    "instituicao": "Open University / Jisc",
+    "pais": "Reino Unido",
+    "url": "https://core.ac.uk/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "The largest aggregator of open-access research papers.",
+      "pt": "O maior agregador de artigos de pesquisa em acesso aberto.",
+      "es": "El mayor agregador de artículos de investigación en acceso abierto."
+    }
+  },
+  {
+    "nome": "SSRN — Political Science Network",
+    "instituicao": "Elsevier",
+    "pais": "EUA",
+    "url": "https://www.ssrn.com/",
+    "acesso": "misto",
+    "nota": {
+      "en": "Preprints and working papers in political science.",
+      "pt": "Preprints e working papers de ciência política.",
+      "es": "Preprints y working papers de ciencia política."
+    }
+  },
+  {
+    "nome": "Persée",
+    "instituicao": "Ministério do Ensino Superior",
+    "pais": "França",
+    "url": "https://www.persee.fr/",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "JSTOR Open Access",
+    "instituicao": "ITHAKA",
+    "pais": "EUA",
+    "url": "https://www.jstor.org/open/",
+    "acesso": "misto"
+  },
+  {
+    "nome": "Google Scholar",
+    "instituicao": "Google",
+    "pais": "Internacional",
+    "url": "https://scholar.google.com/",
+    "acesso": "aberto"
+  }
+]

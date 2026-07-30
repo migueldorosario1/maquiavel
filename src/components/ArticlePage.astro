@@ -1,0 +1,68 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { UI, LANGS, articleUrl, type Lang } from '../i18n/ui';
+
+interface Props { entry: any; lang: Lang }
+const { entry, lang } = Astro.props;
+const t = UI[lang];
+const { Content } = await render(entry);
+
+function slugOf(id: string): string {
+  return id.replace(/^(en|pt|es)\//, '');
+}
+
+// versões paralelas do mesmo artigo (par_trilingue)
+const siblings = await getCollection('artigos', ({ data }) => data.par_trilingue === entry.data.par_trilingue && !data.draft);
+const alternates: Partial<Record<Lang, string>> = {};
+for (const s of siblings) {
+  alternates[s.data.lang as Lang] = articleUrl(s.data.lang as Lang, slugOf(s.id));
+}
+
+const dateStr = entry.data.pubDate.toLocaleDateString(
+  lang === 'en' ? 'en-US' : lang === 'pt' ? 'pt-BR' : 'es-ES',
+  { year: 'numeric', month: 'long', day: 'numeric' },
+);
+---
+
+<Base title={entry.data.title} description={entry.data.description} lang={lang} alternates={alternates}>
+  <article>
+    <header class="article-head">
+      <div class="container">
+        <div class="kicker">{entry.data.secao}</div>
+        <h1>{entry.data.title}</h1>
+        <p class="desc">{entry.data.description}</p>
+        <div class="meta">{entry.data.autor} · {dateStr}</div>
+      </div>
+    </header>
+
+    <div class="narrow">
+      {entry.data.fonte_curadoria && (
+        <div class="source-note" style="margin-top:30px">
+          {t.curated_from}: <a href={entry.data.fonte_curadoria}>{entry.data.fonte_curadoria}</a>
+          {entry.data.licenca_fonte && <> · {t.license}: {entry.data.licenca_fonte}</>}
+        </div>
+      )}
+      <div class="article-body">
+        <Content />
+      </div>
+      <footer class="article-foot">
+        {siblings.length > 1 && (
+          <div class="also">
+            {t.also_in}:{' '}
+            {siblings
+              .filter((s) => s.data.lang !== lang)
+              .map((s, i) => (
+                <>
+                  {i > 0 && ' · '}
+                  <a href={articleUrl(s.data.lang as Lang, slugOf(s.id))}>
+                    {s.data.lang === 'en' ? 'English' : s.data.lang === 'pt' ? 'Português' : 'Español'}
+                  </a>
+                </>
+              ))}
+          </div>
+        )}
+      </footer>
+    </div>
+  </article>
+</Base>

@@ -1,0 +1,65 @@
+---
+import Base from '../layouts/Base.astro';
+import { UI, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = UI[lang];
+
+const C = {
+  en: {
+    h1: 'About Maquiavel',
+    intro: 'An international journal of political science — essays, not hard news.',
+    blocks: [
+      ['What we are', 'Maquiavel is born from a simple observation: political science produces first-rate knowledge — and almost none of it reaches the public in living language. Meanwhile, public political debate drowns in shouting without method. Maquiavel stands between those two worlds: the rigor of science, the voice of a magazine.'],
+      ['The name', 'Niccolò Machiavelli founded modern political science by daring to describe politics as it is, not as we wish it were. For us, the name is a declaration of method, not of cynicism: understanding power is the first step to changing it.'],
+      ['What we publish', 'Essays and long-form analysis on Brazilian and international politics; interviews with political scientists; a curated selection of the best political writing worldwide, legally translated into English, Portuguese and Spanish; dossiers; and reviews of books and papers that matter.'],
+      ['Method and transparency', 'Every claim has grounding — data, literature, sources. When a piece is produced or assisted by AI, we say so. Curation always credits the original source and respects its license.'],
+      ['The scientific track', 'Maquiavel is pursuing formal registration as a scientific journal: ISSN, editorial board, peer review and regular periodicity. We announce each credential only once obtained.'],
+      ['The podcast', 'Maquiavel is also a podcast of debates with political scientists — from IESP-UERJ, UFRJ, UFF and universities across Brazil and abroad — focused on Rio de Janeiro, Brazil, and the world. Every episode becomes an essay.'],
+    ],
+  },
+  pt: {
+    h1: 'Sobre a Maquiavel',
+    intro: 'Uma revista internacional de ciência política — ensaios, não hard news.',
+    blocks: [
+      ['O que somos', 'A Maquiavel nasce de uma constatação simples: a ciência política produz conhecimento de primeira linha — e quase nada disso chega ao público em linguagem viva. Enquanto isso, o debate público afunda em gritaria sem método. A Maquiavel fica entre esses dois mundos: o rigor da ciência, a voz da revista.'],
+      ['O nome', 'Nicolau Maquiavel fundou a ciência política moderna ao ousar descrever a política como ela é, não como gostaríamos que fosse. Para nós, o nome é uma declaração de método, não de cinismo: entender o poder é o primeiro passo para transformá-lo.'],
+      ['O que publicamos', 'Ensaios e análises de fôlego sobre política brasileira e internacional; entrevistas com cientistas políticos; curadoria do melhor do pensamento político mundial, traduzida legalmente para português, inglês e espanhol; dossiês; e resenhas de livros e papers que importam.'],
+      ['Método e transparência', 'Todo argumento tem lastro — dado, literatura, fonte. Quando um texto é produzido ou auxiliado por IA, declaramos. A curadoria sempre credita a fonte original e respeita sua licença.'],
+      ['A trilha científica', 'A Maquiavel tramita seu cadastro como revista científica: ISSN, conselho editorial, revisão por pares e periodicidade regular. Anunciamos cada credenciamento apenas quando obtido.'],
+      ['O podcast', 'A Maquiavel é também um podcast de debates com cientistas políticos — do IESP-UERJ, da UFRJ, da UFF e de universidades do Brasil e do exterior — com foco no Rio de Janeiro, no Brasil e no mundo. Cada episódio vira ensaio.'],
+    ],
+  },
+  es: {
+    h1: 'Sobre Maquiavel',
+    intro: 'Una revista internacional de ciencia política — ensayos, no hard news.',
+    blocks: [
+      ['Qué somos', 'Maquiavel nace de una constatación simple: la ciencia política produce conocimiento de primer nivel — y casi nada llega al público en lenguaje vivo. Mientras tanto, el debate público se ahoga en gritos sin método. Maquiavel está entre esos dos mundos: el rigor de la ciencia, la voz de la revista.'],
+      ['El nombre', 'Nicolás Maquiavelo fundó la ciencia política moderna al atreverse a describir la política como es, no como quisiéramos que fuera. Para nosotros, el nombre es una declaración de método, no de cinismo: entender el poder es el primer paso para transformarlo.'],
+      ['Qué publicamos', 'Ensayos y análisis de fondo sobre política brasileña e internacional; entrevistas con cientistas políticos; curaduría del mejor pensamiento político mundial, traducida legalmente al español, inglés y portugués; dosieres; y reseñas de libros y papers que importan.'],
+      ['Método y transparencia', 'Todo argumento tiene respaldo — datos, literatura, fuentes. Cuando un texto es producido o asistido por IA, lo declaramos. La curaduría siempre acredita la fuente original y respeta su licencia.'],
+      ['La vía científica', 'Maquiavel tramita su registro como revista científica: ISSN, consejo editorial, revisión por pares y periodicidad regular. Anunciamos cada acreditación solo cuando se obtiene.'],
+      ['El podcast', 'Maquiavel es también un podcast de debates con cientistas políticos — del IESP-UERJ, UFRJ, UFF y universidades de Brasil y del exterior — con foco en Río de Janeiro, Brasil y el mundo. Cada episodio se convierte en ensayo.'],
+    ],
+  },
+};
+const c = C[lang];
+---
+
+<Base title={c.h1} description={c.intro} lang={lang}>
+  <header class="page-head">
+    <div class="container">
+      <h1>{c.h1}</h1>
+      <p class="intro">{c.intro}</p>
+    </div>
+  </header>
+  <div class="narrow page-body">
+    {c.blocks.map(([h, p]) => (
+      <>
+        <h2>{h}</h2>
+        <p>{p}</p>
+      </>
+    ))}
+  </div>
+</Base>

@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import { UI, type Lang } from '../i18n/ui';
+import revistasBr from '../data/acervo/revistas_brasil.json';
+import revistasMundo from '../data/acervo/revistas_mundo.json';
+import repositorios from '../data/acervo/repositorios.json';
+import universidades from '../data/acervo/universidades.json';
+import substacks from '../data/acervo/substacks.json';
+import videos from '../data/acervo/videos.json';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = UI[lang];
+
+type Item = { nome: string; instituicao?: string; pais?: string; url: string; acesso?: string; nota?: Record<string, string> };
+
+function badge(acesso: string | undefined) {
+  if (acesso === 'aberto') return { cls: 'open', label: t.access_open };
+  if (acesso === 'misto') return { cls: 'mixed', label: t.access_mixed };
+  if (acesso === 'paywall') return { cls: 'paywall', label: t.access_paywall };
+  return null;
+}
+
+const sections: { id: string; title: string; items: Item[] }[] = [
+  { id: 'revistas-brasil', title: t.archive_journals_br, items: revistasBr as Item[] },
+  { id: 'revistas-mundo', title: t.archive_journals_world, items: revistasMundo as Item[] },
+  { id: 'repositorios', title: t.archive_repos, items: repositorios as Item[] },
+  { id: 'universidades', title: t.archive_unis, items: universidades as Item[] },
+  { id: 'substacks', title: t.archive_substacks, items: substacks as Item[] },
+  { id: 'videos', title: t.archive_videos, items: videos as Item[] },
+];
+---
+
+<Base title={t.archive_title} description={t.archive_intro} lang={lang}>
+  <header class="page-head">
+    <div class="container">
+      <h1>{t.archive_title}</h1>
+      <p class="intro">{t.archive_intro}</p>
+    </div>
+  </header>
+
+  <div class="container page-body">
+    {sections.map((sec) => (
+      <section class="acervo-section" id={sec.id}>
+        <div class="section-head">{sec.title}</div>
+        <div class="acervo-grid">
+          {sec.items.map((it) => {
+            const b = badge(it.acesso);
+            return (
+              <div class="acervo-card">
+                <h3>
+                  <a href={it.url} target="_blank" rel="noopener">{it.nome}</a>
+                  {b && <span class={`badge ${b.cls}`}>{b.label}</span>}
+                </h3>
+                <div class="inst">{[it.instituicao, it.pais].filter(Boolean).join(' · ')}</div>
+                {it.nota && it.nota[lang] && <div class="nota">{it.nota[lang]}</div>}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>

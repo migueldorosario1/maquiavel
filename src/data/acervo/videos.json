@@ -1,0 +1,102 @@
+[
+  {
+    "nome": "Roda Viva",
+    "instituicao": "TV Cultura",
+    "pais": "Brasil",
+    "url": "https://www.youtube.com/@rodaviva",
+    "acesso": "aberto",
+    "nota": {
+      "en": "The classic Brazilian interview program — decades of conversations with political scientists.",
+      "pt": "O clássico programa de entrevistas brasileiro — décadas de conversas com cientistas políticos.",
+      "es": "El clásico programa de entrevistas brasileño — décadas de conversaciones con cientistas políticos."
+    }
+  },
+  {
+    "nome": "Xadrez Verbal",
+    "instituicao": "Filipe Figueiredo",
+    "pais": "Brasil",
+    "url": "https://www.youtube.com/@XadrezVerbal",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Weekly geopolitics show, rigorous and accessible, in Portuguese.",
+      "pt": "Programa semanal de geopolítica, rigoroso e acessível, em português.",
+      "es": "Programa semanal de geopolítica, riguroso y accesible, en portugués."
+    }
+  },
+  {
+    "nome": "Professor HOC",
+    "instituicao": "Henrique O. Costa",
+    "pais": "Brasil",
+    "url": "https://www.youtube.com/@ProfessorHOC",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Café Filosófico CPFL",
+    "instituicao": "CPFL Cultura",
+    "pais": "Brasil",
+    "url": "https://www.youtube.com/@cpflcultura",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "Fundação Fernando Henrique Cardoso",
+    "instituicao": "iFHC",
+    "pais": "Brasil",
+    "url": "https://www.ifhc.org.br/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Debates and interviews on Brazilian democracy and institutions.",
+      "pt": "Debates e entrevistas sobre democracia e instituições brasileiras.",
+      "es": "Debates y entrevistas sobre democracia e instituciones brasileñas."
+    }
+  },
+  {
+    "nome": "Oxford Union",
+    "instituicao": "Oxford Union Society",
+    "pais": "Reino Unido",
+    "url": "https://www.youtube.com/@OxfordUnion",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Historic debates with heads of state, thinkers and dissidents.",
+      "pt": "Debates históricos com chefes de Estado, pensadores e dissidentes.",
+      "es": "Debates históricos con jefes de Estado, pensadores y disidentes."
+    }
+  },
+  {
+    "nome": "Intelligence Squared",
+    "instituicao": "Intelligence Squared",
+    "pais": "Reino Unido",
+    "url": "https://www.youtube.com/@intelligencesquared",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Oxford-style debates on the big political questions of our time.",
+      "pt": "Debates no estilo Oxford sobre as grandes questões políticas do nosso tempo.",
+      "es": "Debates al estilo Oxford sobre las grandes cuestiones políticas de nuestro tiempo."
+    }
+  },
+  {
+    "nome": "GZERO World with Ian Bremmer",
+    "instituicao": "GZERO Media",
+    "pais": "EUA",
+    "url": "https://www.youtube.com/@GZEROMedia",
+    "acesso": "aberto"
+  },
+  {
+    "nome": "C-SPAN",
+    "instituicao": "C-SPAN",
+    "pais": "EUA",
+    "url": "https://www.c-span.org/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "The raw feed of American democracy: hearings, lectures, book talks.",
+      "pt": "A matéria-prima da democracia americana: audiências, aulas, lançamentos.",
+      "es": "La materia prima de la democracia estadounidense: audiencias, clases, presentaciones."
+    }
+  },
+  {
+    "nome": "CEBRAP",
+    "instituicao": "Centro Brasileiro de Análise e Planejamento",
+    "pais": "Brasil",
+    "url": "https://www.youtube.com/@cebrap",
+    "acesso": "aberto"
+  }
+]

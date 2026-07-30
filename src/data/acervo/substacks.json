@@ -1,0 +1,78 @@
+[
+  {
+    "nome": "Chartbook",
+    "instituicao": "Adam Tooze",
+    "pais": "EUA / Reino Unido",
+    "url": "https://adamtooze.substack.com/",
+    "acesso": "misto",
+    "nota": {
+      "en": "Political economy and global crises by one of the great living historians.",
+      "pt": "Economia política e crises globais por um dos grandes historiadores vivos.",
+      "es": "Economía política y crisis globales por uno de los grandes historiadores vivos."
+    }
+  },
+  {
+    "nome": "Persuasion",
+    "instituicao": "Yascha Mounk",
+    "pais": "EUA",
+    "url": "https://www.persuasion.community/",
+    "acesso": "misto",
+    "nota": {
+      "en": "Liberal democracy under stress, by a leading scholar of democratic crisis.",
+      "pt": "A democracia liberal sob estresse, por um dos maiores estudiosos da crise democrática.",
+      "es": "La democracia liberal bajo estrés, por un destacado estudioso de la crisis democrática."
+    }
+  },
+  {
+    "nome": "Slow Boring",
+    "instituicao": "Matt Yglesias",
+    "pais": "EUA",
+    "url": "https://www.slowboring.com/",
+    "acesso": "misto"
+  },
+  {
+    "nome": "Letters from an American",
+    "instituicao": "Heather Cox Richardson",
+    "pais": "EUA",
+    "url": "https://heathercoxrichardson.substack.com/",
+    "acesso": "misto",
+    "nota": {
+      "en": "American politics read through its history, daily.",
+      "pt": "A política americana lida através de sua história, diariamente.",
+      "es": "La política estadounidense leída a través de su historia, a diario."
+    }
+  },
+  {
+    "nome": "GZERO World",
+    "instituicao": "Ian Bremmer",
+    "pais": "EUA",
+    "url": "https://www.gzeromedia.com/",
+    "acesso": "misto"
+  },
+  {
+    "nome": "The Racket",
+    "instituicao": "Jonathan M. Katz",
+    "pais": "EUA",
+    "url": "https://www.theracket.news/",
+    "acesso": "misto"
+  },
+  {
+    "nome": "Popular Information",
+    "instituicao": "Judd Legum",
+    "pais": "EUA",
+    "url": "https://popular.info/",
+    "acesso": "misto"
+  },
+  {
+    "nome": "Xadrez Verbal",
+    "instituicao": "Filipe Figueiredo",
+    "pais": "Brasil",
+    "url": "https://xadrezverbal.com/",
+    "acesso": "aberto",
+    "nota": {
+      "en": "Geopolitics in Portuguese — podcast, columns and analysis.",
+      "pt": "Geopolítica em português — podcast, colunas e análise.",
+      "es": "Geopolítica en portugués — podcast, columnas y análisis."
+    }
+  }
+]
