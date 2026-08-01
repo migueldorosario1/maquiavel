@@ -42,17 +42,22 @@ const sections: { id: string; title: string; items: Item[] }[] = [
   <div class="container page-body">
     {sections.map((sec) => (
       <section class="acervo-section" id={sec.id}>
-        <div class="section-head">{sec.title}</div>
+        <div class="section-head">
+          <span>{sec.title}</span>
+          <span style="color: var(--gold); font-size: 0.9rem;">✦</span>
+        </div>
         <div class="acervo-grid">
           {sec.items.map((it) => {
             const b = badge(it.acesso);
             return (
               <div class="acervo-card">
-                <h3>
-                  <a href={it.url} target="_blank" rel="noopener">{it.nome}</a>
-                  {b && <span class={`badge ${b.cls}`}>{b.label}</span>}
-                </h3>
-                <div class="inst">{[it.instituicao, it.pais].filter(Boolean).join(' · ')}</div>
+                <div>
+                  <h3>
+                    <a href={it.url} target="_blank" rel="noopener">{it.nome}</a>
+                    {b && <span class={`badge ${b.cls}`}>{b.label}</span>}
+                  </h3>
+                  <div class="inst">{[it.instituicao, it.pais].filter(Boolean).join(' · ')}</div>
+                </div>
                 {it.nota && it.nota[lang] && <div class="nota">{it.nota[lang]}</div>}
               </div>
             );

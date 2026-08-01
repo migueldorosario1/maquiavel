@@ -38,18 +38,21 @@ const dateStr = entry.data.pubDate.toLocaleDateString(
 
     <div class="narrow">
       {entry.data.fonte_curadoria && (
-        <div class="source-note" style="margin-top:30px">
-          {t.curated_from}: <a href={entry.data.fonte_curadoria}>{entry.data.fonte_curadoria}</a>
-          {entry.data.licenca_fonte && <> · {t.license}: {entry.data.licenca_fonte}</>}
+        <div class="source-note" style="margin-top:32px">
+          <strong>{t.curated_from}:</strong> <a href={entry.data.fonte_curadoria} target="_blank" rel="noopener">{entry.data.fonte_curadoria}</a>
+          {entry.data.licenca_fonte && <> · <strong>{t.license}:</strong> {entry.data.licenca_fonte}</>}
         </div>
       )}
       <div class="article-body">
         <Content />
       </div>
+      
+      <div class="fleuron-divider">❦</div>
+
       <footer class="article-foot">
         {siblings.length > 1 && (
           <div class="also">
-            {t.also_in}:{' '}
+            <strong>{t.also_in}:</strong>{' '}
             {siblings
               .filter((s) => s.data.lang !== lang)
               .map((s, i) => (

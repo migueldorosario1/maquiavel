@@ -35,7 +35,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     nav_about: 'About',
     nav_submit: 'Submissions',
     home_latest: 'Latest essays',
-    home_featured: 'Featured',
+    home_featured: 'Featured Essay',
     archive_title: 'The Archive',
     archive_intro:
       'A living map of political science: journals from Brazil and the world, thesis repositories, research centers, newsletters and video channels. Continuously curated.',
@@ -48,7 +48,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     podcast_title: 'Maquiavel — the podcast',
     submit_title: 'Submissions',
     about_title: 'About Maquiavel',
-    read_more: 'Read',
+    read_more: 'Read Essay',
     also_in: 'Also in',
     access_open: 'Open access',
     access_mixed: 'Mixed access',
@@ -57,6 +57,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     footer_note: 'Maquiavel — political science with a journalist’s voice. Essays, not hard news.',
     curated_from: 'Curated and translated from',
     license: 'License',
+    hero_caption: 'Niccolò Machiavelli in his study (editorial gravure after Santi di Tito, 1513)',
   },
   pt: {
     tagline: 'Uma revista internacional de ciência política',
@@ -66,7 +67,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     nav_about: 'Sobre',
     nav_submit: 'Colabore',
     home_latest: 'Últimos ensaios',
-    home_featured: 'Destaque',
+    home_featured: 'Ensaio em Destaque',
     archive_title: 'O Acervo',
     archive_intro:
       'Um mapa vivo da ciência política: revistas do Brasil e do mundo, repositórios de teses, centros de pesquisa, newsletters e canais de vídeo. Curadoria contínua.',
@@ -79,7 +80,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     podcast_title: 'Maquiavel — o podcast',
     submit_title: 'Colabore com a Maquiavel',
     about_title: 'Sobre a Maquiavel',
-    read_more: 'Ler',
+    read_more: 'Ler Ensaio',
     also_in: 'Também em',
     access_open: 'Acesso aberto',
     access_mixed: 'Acesso misto',
@@ -88,6 +89,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     footer_note: 'Maquiavel — ciência política com voz de revista. Ensaios, não hard news.',
     curated_from: 'Curadoria e tradução de',
     license: 'Licença',
+    hero_caption: 'Nicolau Maquiavel em seu escritório (gravura editorial segundo Santi di Tito, 1513)',
   },
   es: {
     tagline: 'Una revista internacional de ciencia política',
@@ -97,7 +99,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     nav_about: 'Sobre',
     nav_submit: 'Colabora',
     home_latest: 'Últimos ensayos',
-    home_featured: 'Destacado',
+    home_featured: 'Ensayo Destacado',
     archive_title: 'El Archivo',
     archive_intro:
       'Un mapa vivo de la ciencia política: revistas de Brasil y del mundo, repositorios de tesis, centros de investigación, newsletters y canales de video. Curaduría continua.',
@@ -110,7 +112,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     podcast_title: 'Maquiavel — el podcast',
     submit_title: 'Colabora con Maquiavel',
     about_title: 'Sobre Maquiavel',
-    read_more: 'Leer',
+    read_more: 'Leer Ensayo',
     also_in: 'También en',
     access_open: 'Acceso abierto',
     access_mixed: 'Acceso mixto',
@@ -119,5 +121,6 @@ export const UI: Record<Lang, Record<string, string>> = {
     footer_note: 'Maquiavel — ciencia política con voz de revista. Ensayos, no hard news.',
     curated_from: 'Curaduría y traducción de',
     license: 'Licencia',
+    hero_caption: 'Nicolás Maquiavelo en su estudio (grabado editorial según Santi di Tito, 1513)',
   },
 };

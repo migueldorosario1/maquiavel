@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 90" width="100%" height="100%">
+  <defs>
+    <style>
+      .wm-title {
+        font-family: 'Cinzel', 'Playfair Display', 'Times New Roman', Georgia, serif;
+        font-size: 52px;
+        font-weight: 700;
+        letter-spacing: 0.26em;
+        fill: #F0EAE1;
+        text-anchor: middle;
+      }
+      .wm-rule {
+        stroke: #D64545;
+        stroke-width: 1.5;
+      }
+      .wm-rule-thin {
+        stroke: #4A4237;
+        stroke-width: 1;
+      }
+    </style>
+  </defs>
+  <!-- Upper Rule -->
+  <line x1="40" y1="12" x2="640" y2="12" class="wm-rule" />
+  <line x1="40" y1="15" x2="640" y2="15" class="wm-rule-thin" />
+
+  <!-- Central Wordmark -->
+  <text x="348" y="56" class="wm-title">MAQUIAVEL</text>
+
+  <!-- Lower Rule -->
+  <line x1="40" y1="72" x2="640" y2="72" class="wm-rule-thin" />
+  <line x1="40" y1="75" x2="640" y2="75" class="wm-rule" />
+
+  <!-- Center Diamond Accent -->
+  <polygon points="340,73.5 344,69.5 348,73.5 344,77.5" fill="#D64545" />
+</svg>

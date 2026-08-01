@@ -26,12 +26,28 @@ function dateOf(d: Date): string {
   {featured && (
     <section class="hero">
       <div class="container">
-        <div class="kicker">{t.home_featured}</div>
-        <h1><a href={articleUrl(lang, slugOf(featured.id))}>{featured.data.title}</a></h1>
-        <p class="desc">{featured.data.description}</p>
-        <div class="meta">
-          <span class="secao-chip">{featured.data.secao}</span>
-          {featured.data.autor} · {dateOf(featured.data.pubDate)}
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="kicker">{t.home_featured}</div>
+            <h1><a href={articleUrl(lang, slugOf(featured.id))}>{featured.data.title}</a></h1>
+            <p class="desc">{featured.data.description}</p>
+            <div class="meta">
+              <span class="secao-chip">{featured.data.secao}</span>
+              <span>{featured.data.autor} · {dateOf(featured.data.pubDate)}</span>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <a href={articleUrl(lang, slugOf(featured.id))}>
+              <img 
+                src="/hero/hero-machiavelli.jpg" 
+                alt="Niccolò Machiavelli — Retrato Editorial" 
+                width="600" 
+                height="600" 
+                loading="eager"
+              />
+            </a>
+            <div class="hero-image-caption">{t.hero_caption}</div>
+          </div>
         </div>
       </div>
     </section>
@@ -39,7 +55,10 @@ function dateOf(d: Date): string {
 
   <section id="latest">
     <div class="container">
-      <div class="section-head">{t.home_latest}</div>
+      <div class="section-head">
+        <span>{t.home_latest}</span>
+        <span style="color: var(--gold); font-size: 1.1rem;">❧</span>
+      </div>
       <ul class="article-list">
         {rest.map((p) => (
           <li>
@@ -47,7 +66,7 @@ function dateOf(d: Date): string {
             <p class="desc">{p.data.description}</p>
             <div class="meta">
               <span class="secao-chip">{p.data.secao}</span>
-              {p.data.autor} · {dateOf(p.data.pubDate)}
+              <span>{p.data.autor} · {dateOf(p.data.pubDate)}</span>
             </div>
           </li>
         ))}
