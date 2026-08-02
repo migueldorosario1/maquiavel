@@ -1,24 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 130" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 120" width="100%" height="100%">
   <defs>
     <style>
       .logo-title {
         font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
-        font-size: 56px;
+        font-size: 64px;
         font-weight: 800;
         letter-spacing: 0.22em;
         fill: #1A1613;
       }
-      .logo-sub {
-        font-family: 'Inter', sans-serif;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 0.38em;
-        fill: #721C1C;
-        text-transform: uppercase;
-      }
       .logo-rule {
         stroke: #721C1C;
-        stroke-width: 2;
+        stroke-width: 2.5;
       }
       .logo-rule-thin {
         stroke: #DCD3C5;
@@ -28,7 +20,7 @@
   </defs>
 
   <!-- GRAPHIC EMBLEM (LEFT) -->
-  <g transform="translate(15, 5)">
+  <g transform="translate(15, 0)">
     <!-- Shield / Outer Ring -->
     <circle cx="60" cy="60" r="56" fill="none" stroke="#1A1613" stroke-width="4"/>
     <circle cx="60" cy="60" r="50" fill="none" stroke="#721C1C" stroke-width="2"/>
@@ -49,18 +41,15 @@
 
   <!-- WORDMARK LOCKUP (RIGHT) -->
   <g transform="translate(155, 0)">
-    <!-- Top Divider Line -->
-    <line x1="0" y1="26" x2="570" y2="26" class="logo-rule" />
-    <line x1="0" y1="30" x2="570" y2="30" class="logo-rule-thin" />
+    <!-- Top Divider Lines -->
+    <line x1="0" y1="28" x2="510" y2="28" class="logo-rule" />
+    <line x1="0" y1="32" x2="510" y2="32" class="logo-rule-thin" />
 
-    <!-- Main Title -->
-    <text x="0" y="82" class="logo-title">MAQUIAVEL</text>
+    <!-- Main Title (MAQUIAVEL ONLY) -->
+    <text x="0" y="86" class="logo-title">MAQUIAVEL</text>
 
-    <!-- Subtitle -->
-    <text x="4" y="106" class="logo-sub">REVISTA INTERNACIONAL DE CIÊNCIA POLÍTICA</text>
-
-    <!-- Bottom Divider Line -->
-    <line x1="0" y1="116" x2="570" y2="116" class="logo-rule-thin" />
-    <line x1="0" y1="120" x2="570" y2="120" class="logo-rule" />
+    <!-- Bottom Divider Lines -->
+    <line x1="0" y1="102" x2="510" y2="102" class="logo-rule-thin" />
+    <line x1="0" y1="106" x2="510" y2="106" class="logo-rule" />
   </g>
 </svg>

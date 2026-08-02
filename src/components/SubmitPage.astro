@@ -8,7 +8,7 @@ const t = UI[lang];
 
 const C = {
   en: {
-    h1: 'Submissions',
+    h1: 'Submissions & Contact',
     intro: 'Maquiavel publishes essays grounded in political science, in English, Portuguese or Spanish.',
     what_h: 'What we are looking for',
     what: [
@@ -23,11 +23,12 @@ const C = {
       'Declare any AI assistance in the writing process.',
       'The editorial board replies to every submission; accepted essays may be translated by Maquiavel into the other two languages, always crediting the author.',
     ],
-    how_h: 'How to submit',
-    how: 'Our editorial channel opens with the first issue. Meanwhile, reach us via the contact announced on our social profiles.',
+    how_h: 'How to submit & Contact',
+    how: 'Send your proposal or essay directly to our editor, Miguel do Rosário:',
+    email: 'migueldorosario@gmail.com',
   },
   pt: {
-    h1: 'Colabore com a Maquiavel',
+    h1: 'Colabore & Contato',
     intro: 'A Maquiavel publica ensaios com lastro em ciência política, em português, inglês ou espanhol.',
     what_h: 'O que procuramos',
     what: [
@@ -42,11 +43,12 @@ const C = {
       'Declare qualquer auxílio de IA na escrita.',
       'A redação responde a todas as submissões; ensaios aceitos podem ser traduzidos pela Maquiavel para as outras duas línguas, sempre com crédito ao autor.',
     ],
-    how_h: 'Como enviar',
-    how: 'Nosso canal editorial abre com a primeira edição. Enquanto isso, fale conosco pelo contato anunciado em nossos perfis sociais.',
+    how_h: 'Como enviar & Contato',
+    how: 'Envie sua proposta ou ensaio diretamente para o editor Miguel do Rosário:',
+    email: 'migueldorosario@gmail.com',
   },
   es: {
-    h1: 'Colabora con Maquiavel',
+    h1: 'Colabora & Contacto',
     intro: 'Maquiavel publica ensayos con base en la ciencia política, en español, inglés o portugués.',
     what_h: 'Qué buscamos',
     what: [
@@ -61,8 +63,9 @@ const C = {
       'Declara cualquier asistencia de IA en la escritura.',
       'La redacción responde a todas las colaboraciones; los ensayos aceptados pueden ser traducidos por Maquiavel a los otros dos idiomas, siempre con crédito al autor.',
     ],
-    how_h: 'Cómo enviar',
-    how: 'Nuestro canal editorial abre con el primer número. Mientras tanto, contáctanos por el canal anunciado en nuestros perfiles sociales.',
+    how_h: 'Cómo enviar & Contacto',
+    how: 'Envía tu propuesta o ensayo directamente al editor Miguel do Rosário:',
+    email: 'migueldorosario@gmail.com',
   },
 };
 const c = C[lang];
@@ -82,5 +85,8 @@ const c = C[lang];
     <ul>{c.rules.map((x) => <li>{x}</li>)}</ul>
     <h2>{c.how_h}</h2>
     <p>{c.how}</p>
+    <div style="background: var(--paper-soft); border: 2px solid var(--gold); padding: 18px 24px; border-radius: 4px; margin-top: 14px; font-size: 1.1rem; text-align: center;">
+      ✉️ <a href={`mailto:${c.email}`} style="font-weight: 700; color: var(--accent); font-family: var(--font-sans);">{c.email}</a>
+    </div>
   </div>
 </Base>
