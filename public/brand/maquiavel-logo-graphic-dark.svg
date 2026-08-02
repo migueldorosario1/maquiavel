@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 130" width="100%" height="100%">
+  <defs>
+    <style>
+      .logo-title {
+        font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+        font-size: 56px;
+        font-weight: 800;
+        letter-spacing: 0.22em;
+        fill: #F0EAE1;
+      }
+      .logo-sub {
+        font-family: 'Inter', sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.38em;
+        fill: #E05252;
+        text-transform: uppercase;
+      }
+      .logo-rule {
+        stroke: #E05252;
+        stroke-width: 2;
+      }
+      .logo-rule-thin {
+        stroke: #4A4237;
+        stroke-width: 1;
+      }
+    </style>
+  </defs>
+
+  <!-- GRAPHIC EMBLEM (LEFT) -->
+  <g transform="translate(15, 5)">
+    <!-- Shield / Outer Ring -->
+    <circle cx="60" cy="60" r="56" fill="none" stroke="#F0EAE1" stroke-width="4"/>
+    <circle cx="60" cy="60" r="50" fill="none" stroke="#E05252" stroke-width="2"/>
+    <circle cx="60" cy="60" r="48" fill="#E05252"/>
+    
+    <!-- Inner Dark Crest -->
+    <path d="M 60 16 C 85 16 96 30 96 60 C 96 90 85 104 60 104 C 35 104 24 90 24 60 C 24 30 35 16 60 16 Z" fill="#12100E" stroke="#F0EAE1" stroke-width="2"/>
+    
+    <!-- Geometric Profile Silhouette of Machiavelli -->
+    <path d="M 46 86 L 46 76 Q 48 70 54 66 L 54 58 Q 50 56 48 50 Q 46 44 48 40 Q 52 34 62 34 Q 72 34 74 42 Q 76 48 72 54 L 72 60 Q 76 66 78 76 L 78 86 Z" fill="#F0EAE1"/>
+
+    <!-- Renaissance Beret Cap Accent -->
+    <path d="M 45 42 Q 42 34 52 28 Q 66 22 76 30 Q 80 34 74 42 Z" fill="#E05252"/>
+
+    <!-- Florentine Star Base Accent -->
+    <polygon points="60,94 63,101 70,101 64,105 66,112 60,107 54,112 56,105 50,101 57,101" fill="#D4AF37" />
+  </g>
+
+  <!-- WORDMARK LOCKUP (RIGHT) -->
+  <g transform="translate(155, 0)">
+    <line x1="0" y1="26" x2="570" y2="26" class="logo-rule" />
+    <line x1="0" y1="30" x2="570" y2="30" class="logo-rule-thin" />
+
+    <text x="0" y="82" class="logo-title">MAQUIAVEL</text>
+
+    <text x="4" y="106" class="logo-sub">REVISTA INTERNACIONAL DE CIÊNCIA POLÍTICA</text>
+
+    <line x1="0" y1="116" x2="570" y2="116" class="logo-rule-thin" />
+    <line x1="0" y1="120" x2="570" y2="120" class="logo-rule" />
+  </g>
+</svg>

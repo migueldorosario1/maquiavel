@@ -7,73 +7,154 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const t = UI[lang];
 
-const posts = (await getCollection('artigos', ({ data }) => data.lang === lang && !data.draft))
-  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const all = await getCollection('artigos', ({ data }) => data.lang === lang && !data.draft);
+all.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
-const [featured, ...rest] = posts;
+const featured = all.find((x) => x.data.destaque) ?? all[0];
+const rest = all.filter((x) => x.id !== featured?.id);
 
 function slugOf(id: string): string {
   return id.replace(/^(en|pt|es)\//, '');
 }
-function dateOf(d: Date): string {
-  return d.toLocaleDateString(lang === 'en' ? 'en-US' : lang === 'pt' ? 'pt-BR' : 'es-ES', {
-    year: 'numeric', month: 'long', day: 'numeric',
-  });
-}
+
+const featuredDate = featured?.data.pubDate.toLocaleDateString(
+  lang === 'en' ? 'en-US' : lang === 'pt' ? 'pt-BR' : 'es-ES',
+  { year: 'numeric', month: 'long', day: 'numeric' },
+);
+
+const acervoChips = [
+  'Revista Brasileira de Ciência Política',
+  'World Politics',
+  'Foreign Affairs',
+  'Dados (IESP-UERJ)',
+  'SciELO / Repositórios',
+  'Substacks & Análises',
+];
 ---
 
-<Base title={t.tagline} description={t.tagline} lang={lang}>
-  {featured && (
-    <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="kicker">{t.home_featured}</div>
-            <h1><a href={articleUrl(lang, slugOf(featured.id))}>{featured.data.title}</a></h1>
-            <p class="desc">{featured.data.description}</p>
-            <div class="meta">
-              <span class="secao-chip">{featured.data.secao}</span>
-              <span>{featured.data.autor} · {dateOf(featured.data.pubDate)}</span>
-            </div>
+<Base title="Home" description={t.tagline} lang={lang}>
+  <div class="container editorial-panel">
+
+    <!-- HERO FEATURE CARD (O Ensaio Principal em Destaque Gráfico) -->
+    {featured && (
+      <section class="hero-feature-card">
+        <div class="hero-feature-content">
+          <div class="hero-feature-kicker">
+            <span>✦</span> {t.home_featured} · {featured.data.secao}
           </div>
-          <div class="hero-image-wrapper">
-            <a href={articleUrl(lang, slugOf(featured.id))}>
-              <img 
-                src="/hero/hero-machiavelli.jpg" 
-                alt="Niccolò Machiavelli — Retrato Editorial" 
-                width="600" 
-                height="600" 
-                loading="eager"
-              />
+          <h1 class="hero-feature-title">
+            <a href={articleUrl(lang, slugOf(featured.id))}>{featured.data.title}</a>
+          </h1>
+          <p class="hero-feature-desc">{featured.data.description}</p>
+          <div class="hero-feature-meta">
+            <span><strong>{featured.data.autor}</strong></span>
+            <span>·</span>
+            <span>{featuredDate}</span>
+          </div>
+          <div style="margin-top: 28px;">
+            <a href={articleUrl(lang, slugOf(featured.id))} class="acervo-pill" style="background: var(--accent); color: #fff; border: none; padding: 10px 22px; font-size: 0.85rem;">
+              {t.read_more} →
             </a>
-            <div class="hero-image-caption">{t.hero_caption}</div>
           </div>
+        </div>
+        <div class="hero-feature-media">
+          <img src="/hero/hero-machiavelli.jpg" alt="Niccolò Machiavelli" />
+          <div class="hero-feature-media-caption">
+            {t.hero_caption}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- PAINEL DE DOSSIÊS & LINHAS DE PESQUISA -->
+    <div class="panel-section-head">
+      <h2>{t.panel_dossiers_title}</h2>
+      <span class="sub">{t.panel_dossiers_subtitle}</span>
+    </div>
+
+    <div class="dossiers-grid">
+      <article class="dossier-card">
+        <div>
+          <div class="dossier-tag">{t.dossier_1_tag}</div>
+          <h3>{t.dossier_1_title}</h3>
+          <p>{t.dossier_1_desc}</p>
+        </div>
+        <div style="margin-top: 20px;">
+          <a href={featured ? articleUrl(lang, slugOf(featured.id)) : '#'} style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;">
+            Explorar Dossiê →
+          </a>
+        </div>
+      </article>
+
+      <article class="dossier-card">
+        <div>
+          <div class="dossier-tag">{t.dossier_2_tag}</div>
+          <h3>{t.dossier_2_title}</h3>
+          <p>{t.dossier_2_desc}</p>
+        </div>
+        <div style="margin-top: 20px;">
+          <a href={lang === 'en' ? '/archive' : lang === 'pt' ? '/pt/acervo' : '/es/archivo'} style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;">
+            Ver Fontes →
+          </a>
+        </div>
+      </article>
+
+      <article class="dossier-card">
+        <div>
+          <div class="dossier-tag">{t.dossier_3_tag}</div>
+          <h3>{t.dossier_3_title}</h3>
+          <p>{t.dossier_3_desc}</p>
+        </div>
+        <div style="margin-top: 20px;">
+          <a href={lang === 'en' ? '/podcast' : lang === 'pt' ? '/pt/podcast' : '/es/podcast'} style="font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;">
+            Ouvir Debates →
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- MÓDULO VISUAL DO ACERVO NA HOME -->
+    <section class="home-acervo-banner">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+        <div>
+          <h3>{t.panel_acervo_title}</h3>
+          <p>{t.panel_acervo_desc}</p>
+          <div class="home-acervo-chips">
+            {acervoChips.map((chip) => (
+              <span class="acervo-pill">{chip}</span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <a href={lang === 'en' ? '/archive' : lang === 'pt' ? '/pt/acervo' : '/es/archivo'} class="acervo-pill" style="background: var(--gold); color: #161311; font-weight: 800; padding: 12px 24px;">
+            {t.nav_archive} (77+) →
+          </a>
         </div>
       </div>
     </section>
-  )}
 
-  <section id="latest">
-    <div class="container">
-      <div class="section-head">
-        <span>{t.home_latest}</span>
-        <span style="color: var(--gold); font-size: 1.1rem;">❧</span>
-      </div>
-      <ul class="article-list">
-        {rest.map((p) => (
-          <li>
-            <h2><a href={articleUrl(lang, slugOf(p.id))}>{p.data.title}</a></h2>
-            <p class="desc">{p.data.description}</p>
-            <div class="meta">
-              <span class="secao-chip">{p.data.secao}</span>
-              <span>{p.data.autor} · {dateOf(p.data.pubDate)}</span>
-            </div>
-          </li>
-        ))}
-        {rest.length === 0 && !featured && (
-          <li><p class="desc">—</p></li>
-        )}
-      </ul>
-    </div>
-  </section>
+    <!-- LISTA DE OUTROS ENSAIOS (SE HOUVER) -->
+    {rest.length > 0 && (
+      <>
+        <div class="panel-section-head" id="latest">
+          <h2>{t.home_latest}</h2>
+        </div>
+        <div class="dossiers-grid">
+          {rest.map((art) => (
+            <article class="dossier-card">
+              <div>
+                <div class="dossier-tag">{art.data.secao}</div>
+                <h3><a href={articleUrl(lang, slugOf(art.id))}>{art.data.title}</a></h3>
+                <p>{art.data.description}</p>
+              </div>
+              <div style="margin-top: 20px; font-family: var(--font-sans); font-size: 0.78rem; color: var(--ink-muted);">
+                {art.data.autor}
+              </div>
+            </article>
+          ))}
+        </div>
+      </>
+    )}
+
+  </div>
 </Base>

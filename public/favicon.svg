@@ -1,11 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
-  <rect width="200" height="200" rx="16" fill="#721C1C"/>
-  <rect x="10" y="10" width="180" height="180" rx="10" fill="none" stroke="#B88E36" stroke-width="2"/>
-  <rect x="14" y="14" width="172" height="172" rx="8" fill="none" stroke="#B88E36" stroke-width="0.8" stroke-dasharray="4 2"/>
-  <g fill="#F9F6F0">
-    <path d="M 45 150 L 45 142 L 55 142 L 55 58 L 45 58 L 45 50 L 78 50 L 78 58 L 70 58 L 70 120 L 105 50 L 118 50 L 132 120 L 132 58 L 122 58 L 122 50 L 155 50 L 155 58 L 145 58 L 145 142 L 155 142 L 155 150 L 125 150 L 125 142 L 133 142 L 123 90 L 98 148 L 88 148 L 63 90 L 57 142 L 65 142 L 65 150 Z" />
-  </g>
-  <path d="M 148 45 C 165 30 172 18 175 12 C 170 25 162 42 142 55 C 138 57.5 135 55 138 52 C 144 47 152 40 148 45 Z" fill="#B88E36"/>
-  <polygon points="100,24 104,20 108,24 104,28" fill="#B88E36" />
-  <polygon points="100,176 104,172 108,176 104,180" fill="#B88E36" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <circle cx="60" cy="60" r="56" fill="#721C1C" stroke="#1A1613" stroke-width="4"/>
+  <circle cx="60" cy="60" r="48" fill="#721C1C"/>
+  <path d="M 60 16 C 85 16 96 30 96 60 C 96 90 85 104 60 104 C 35 104 24 90 24 60 C 24 30 35 16 60 16 Z" fill="#F9F6F0" stroke="#1A1613" stroke-width="2"/>
+  <path d="M 46 86 L 46 76 Q 48 70 54 66 L 54 58 Q 50 56 48 50 Q 46 44 48 40 Q 52 34 62 34 Q 72 34 74 42 Q 76 48 72 54 L 72 60 Q 76 66 78 76 L 78 86 Z" fill="#1A1613"/>
+  <path d="M 45 42 Q 42 34 52 28 Q 66 22 76 30 Q 80 34 74 42 Z" fill="#721C1C"/>
+  <polygon points="60,94 63,101 70,101 64,105 66,112 60,107 54,112 56,105 50,101 57,101" fill="#B88E36" />
 </svg>
