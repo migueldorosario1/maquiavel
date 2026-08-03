@@ -4,7 +4,7 @@ description: "La ciencia política nunca supo tanto — y el debate público nun
 pubDate: 2026-07-30
 lang: es
 par_trilingue: por-que-maquiavel
-secao: Essays
+secao: Ensayos
 autor: "Consejo Editorial de Maquiavel"
 tags: ["manifiesto", "ciencia política", "ensayo"]
 ---

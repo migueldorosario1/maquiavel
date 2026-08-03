@@ -11,7 +11,13 @@ const artigos = defineCollection({
     pubDate: z.coerce.date(),
     lang: z.enum(['en', 'pt', 'es']),
     par_trilingue: z.string(), // chave comum que liga as 3 versões do mesmo artigo
-    secao: z.enum(['Essays', 'Interviews', 'Curation', 'Dossiers', 'Reviews']).default('Essays'),
+    secao: z.enum([
+      'Essays', 'Ensaios', 'Ensayos',
+      'Interviews', 'Entrevistas',
+      'Curation', 'Curadoria', 'Curaduría',
+      'Dossiers', 'Dossiês', 'Dosieres',
+      'Reviews', 'Resenhas', 'Reseñas'
+    ]).default('Essays'),
     autor: z.string().default('Maquiavel'),
     tags: z.array(z.string()).default([]),
     fonte_curadoria: z.string().optional(), // URL da fonte original (quando curadoria)
